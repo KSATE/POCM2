@@ -10,6 +10,7 @@ use Magento\Framework\App\Bootstrap;
 use Magento\Framework\App\Filesystem\DirectoryList;
 
 try {
+echo "test JIRA 1";
     require __DIR__ . '/../app/bootstrap.php';
 } catch (\Exception $e) {
     echo <<<HTML
@@ -35,4 +36,3 @@ $bootstrap = \Magento\Framework\App\Bootstrap::create(BP, $params);
 /** @var \Magento\Framework\App\Http $app */
 $app = $bootstrap->createApplication(\Magento\Framework\App\Http::class);
 $bootstrap->run($app);
-echo "test JIRA 1";
